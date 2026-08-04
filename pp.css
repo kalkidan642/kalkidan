@@ -1,0 +1,19 @@
+body{
+background-color: antiquewhite;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+h1,h2{
+    color:rgb(50, 200, 205);
+    text-align: center;
+}
+p{
+    font-size: large;
+    font-style: normal;
+}
+         .image {
+  width: 300px;
+  height:500px;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
