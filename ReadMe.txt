@@ -13,4 +13,7 @@ The project description is as follows:
 4. Features Used:
             Dark/light theme, Image slider, Typing animation, Digital clock, Current date and time, Search function, Visitor counter, Download CV button, Scroll amination and Back to top button.
 5. How to run:
-        first download the project, then open the project folder in VS code, after that open the index.html file, open with live server, the portfolio will open in your web browser
+        first download the project containing three files(index.html, style.css and script.js), then open the project folder in VS code, after that open the index.html file, open with live server, the portfolio will open in your web browser.
+enjoy the project!
+
+thank you!
