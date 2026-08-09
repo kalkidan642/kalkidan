@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Student personal portfolio website">
+
+    <meta
+        name="author"
+        content="Student Portfolio">
+
+    <title>Student Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER / NAVIGATION
+         ===================================================== -->
+
+         <header class="header" id="header">
+
+        <nav class="navbar">
+            
+            <!-- Logo -->
+
+            <a href="#home" class="logo">
+                <span>&lt;</span>kalkidan<span>/&gt;</span>
+            </a>
+
+
+            <!-- Desktop / Mobile Navigation -->
+
+            <ul class="nav-menu" id="navMenu">
+
+                <li>
+                    <a href="#home" class="nav-link active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="nav-link">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Header Controls -->
+
+            <div class="header-controls">
+
+                <!-- Search -->
+
+                <button
+                    class="icon-btn"
+                    id="searchToggle"
+                    aria-label="Open search">
+
+                    🔍
+
+                </button>
+
+
+                <!-- Theme -->
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark and light theme">
+
+                    <span id="themeIcon">🌙</span>
+
+                </button>
+
+
+                <!-- Mobile menu -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Search Box -->
+
+        <div class="search-panel" id="searchPanel">
+
+            <div class="search-container">
+
+                <input
+                    type="search"
+                    id="siteSearch"
+                    placeholder="Search portfolio..."
+                    autocomplete="off">
+
+                <button
+                    id="searchClose"
+                    aria-label="Close search">
+
+                    ✕
+
+                </button>
+
+            </div>
+
+            <div
+                id="searchResults"
+                class="search-results">
+            </div>
+
+        </div>
+
+    </header>
+
+   
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HOME SECTION
+             ================================================= -->
+
+        <section class="home section" id="home">
+
+            <div class="home-container">
+
+
+                <!-- Home Text -->
+
+                <div class="home-content reveal">
+
+                    <p class="welcome-text">
+                        Welcome to My Portfolio
+                    </p>
+
+                    <h1>
+                        Hello, I'm
+                        <span class="highlight">
+                           kalkidan G/medhin
+                        </span>
+                    </h1>
+
+
+                    <h2 class="typing-wrapper">
+                        I am a
+                        <span id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+
+
+                    <p class="home-description">
+
+                        I am a passionate student interested in
+                        programming, web development, data science,
+                        and emerging technologies. I enjoy learning
+                        new technologies and building useful projects.
+
+                    </p>
+
+
+                    <div class="home-buttons">
+
+                        <a
+                            href="#projects"
+                            class="btn primary-btn">
+
+                            View My Projects
+
+                        </a>
+
+
+                        <button
+                            class="btn secondary-btn"
+                            id="downloadCV">
+
+                            Download CV
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Quick statistics -->
+
+                    <div class="quick-stats">
+
+                        <div class="stat">
+
+                            <strong>
+                                10+
+                            </strong>
+
+                            <span>
+                                Projects
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <strong>
+                                5+
+                            </strong>
+
+                            <span>
+                                Skills
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Motivation
+                            </span>
+
+                        </div>
+
+                    </div>
+                  
+                </div>
+
+
+                <!-- Image Slider -->
+
+                <div class="home-visual reveal">
+
+                    <div class="slider" id="slider">
+
+
+                        <div class="slide active">
+
+                            <div class="slide-content">
+
+                                <div class="student-avatar">
+                                    👨‍💻
+                                </div>
+
+                                <h3>
+                                    Web Developer
+                                </h3>
+
+                                <p>
+                                    Creating responsive websites
+                                    with HTML, CSS and JavaScript.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="slide">
+
+                            <div class="slide-content">
+
+                                <div class="student-avatar">
+                                    🐍
+                                </div>
+
+                                <h3>
+                                    Python Programmer
+                                </h3>
+
+                                <p>
+                                    Developing applications and
+                                    solving programming problems.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="slide">
+
+                            <div class="slide-content">
+
+                                <div class="student-avatar">
+                                    📊
+                                </div>
+
+                                <h3>
+                                    Data analysis
+                                </h3>
+
+                                <p>
+                                    Exploring data analysis and
+                                    visualization.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Slider controls -->
+
+                        <button
+                            class="slider-btn prev"
+                            id="prevSlide"
+                            aria-label="Previous slide">
+
+                            ‹
+
+                        </button>
+
+
+                        <button
+                            class="slider-btn next"
+                            id="nextSlide"
+                            aria-label="Next slide">
+
+                            ›
+
+                        </button>
+
+
+                        <!-- Dots -->
+
+                        <div
+                            class="slider-dots"
+                            id="sliderDots">
+
+                            <button
+                                class="dot active"
+                                data-slide="0">
+                            </button>
+
+                            <button
+                                class="dot"
+                                data-slide="1">
+                            </button>
+
+                            <button
+                                class="dot"
+                                data-slide="2">
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Digital information -->
+
+            <div class="home-info reveal">
+
+                <div class="info-card">
+
+                    <span>🕐</span>
+
+                    <div>
+
+                        <small>
+                            Current Time
+                        </small>
+
+                        <strong id="digitalClock">
+                            00:00:00
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>📅</span>
+
+                    <div>
+
+                        <small>
+                            Today's Date
+                        </small>
+
+                        <strong id="currentDate">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>👁️</span>
+
+                    <div>
+
+                        <small>
+                            Visitors
+                        </small>
+
+                        <strong id="visitorCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT SECTION
+             ================================================= -->
+
+        <section class="about section" id="about">
+
+            <div class="section-container">
+
+
+                <div class="section-title reveal">
+
+                    <p class="section-subtitle">
+                        Who I Am
+                    </p>
+
+                    <h2>
+                        About <span>Me</span>
+                    </h2>
+
+                    <div class="title-line"></div>
+
+                </div>
+
+
+                <div class="about-content">
+
+
+                    <!-- About visual -->
+
+                    <div class="about-image reveal">
+
+                        <div class="about-card">
+
+                            <div class="large-avatar">
+                                👨‍🎓
+                            </div>
+
+                            <h3>
+                              kalkidan G/medhin
+                            </h3>
+
+                            <p>
+                                web development Student
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- About text -->
+
+                    <div class="about-text reveal">
+
+                        <h3>
+                            Student & Future Technology Professional
+                        </h3>
+
+                        <p>
+
+                            I am a motivated student with a strong
+                            interest in computer science, programming,
+                            web development, and data science.
+
+                        </p>
+
+                        <p>
+
+                            My goal is to continuously improve my
+                            technical skills and use technology to
+                            solve real-world problems.
+
+                        </p>
+
+
+                        <div class="about-details">
+
+                            <div>
+                                <strong>Name:</strong>
+                               kalkidan G/medhin
+                            </div>
+
+                            <div>
+                                <strong>Education:</strong>
+                                web developmwnt
+                            </div>
+
+                            <div>
+                                <strong>Interest:</strong>
+                                Technology & Programming
+                            </div>
+
+                            <div>
+                                <strong>Availability:</strong>
+                                Open to Opportunities
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="#contact"
+                            class="btn primary-btn">
+
+                            Contact Me
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SKILLS SECTION
+             ================================================= -->
+
+        <section class="skills section" id="skills">
+
+            <div class="section-container">
+
+
+                <div class="section-title reveal">
+
+                    <p class="section-subtitle">
+                        What I Know
+                    </p>
+
+                    <h2>
+                        My <span>Skills</span>
+                    </h2>
+
+                    <div class="title-line"></div>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <!-- Skill 1 -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            HTML
+                        </h3>
+
+                        <p>
+                            Building semantic web pages.
+                        </p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                style="--progress: 90%;">
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent">
+                            90%
+                        </span>
+
+                    </div>
+
+
+                    <!-- Skill 2 -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            🎨
+                        </div>
+
+                        <h3>
+                            CSS
+                        </h3>
+
+                        <p>
+                            Creating responsive interfaces.
+                        </p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                style="--progress: 85%;">
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent">
+                            85%
+                        </span>
+
+                    </div>
+
+
+                    <!-- Skill 3 -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            Creating interactive web applications.
+                        </p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                style="--progress: 80%;">
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent">
+                            80%
+                        </span>
+
+                    </div>
+
+
+                    <!-- Skill 4 -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            🐍
+                        </div>
+
+                        <h3>
+                            Python
+                        </h3>
+
+                        <p>
+                            Programming and data analysis.
+                      </p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                style="--progress: 82%;">
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent">
+                            82%
+                        </span>
+
+                    </div>
+
+
+                    <!-- Skill 5 -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            🗄️
+                        </div>
+
+                        <h3>
+                            SQL
+                        </h3>
+
+                        <p>
+                            Database design and queries.
+                        </p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                style="--progress: 75%;">
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent">
+                            75%
+                        </span>
+
+                    </div>
+
+
+                    <!-- Skill 6 -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Data Analysis
+                        </h3>
+
+                        <p>
+                            Data exploration and visualization.
+                        </p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                style="--progress: 78%;">
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent">
+                            78%
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJECTS SECTION
+             ================================================= -->
+
+        <section class="projects section" id="projects">
+
+            <div class="section-container">
+
+
+                <div class="section-title reveal">
+
+                    <p class="section-subtitle">
+                        My Work
+                    </p>
+
+                    <h2>
+                        My <span>Projects</span>
+                    </h2>
+
+                    <div class="title-line"></div>
+
+                </div>
+
+
+                <div class="projects-introduction reveal">
+
+                    <p>
+                        Explore some of my academic and personal
+                        projects. Use the search box or category
+                        buttons to filter the projects.
+                    </p>
+
+                </div>
+
+
+                <!-- Project Search -->
+
+                <div class="project-search reveal">
+
+                    <input
+                        type="search"
+                        id="projectSearch"
+                        placeholder="Search projects...">
+
+                    <span>
+                        🔍
+                    </span>
+
+                </div>
+
+
+                <!-- Filters -->
+
+                <div
+                    class="project-filters reveal"
+                    id="projectFilters">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all">
+
+                        All
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="web">
+
+                        Web
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="python">
+
+                        Python
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="data">
+
+                        Data Science
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="other">
+
+                        Other
+
+                    </button>
+
+                </div>
+
+
+                <!-- Project Grid -->
+
+                <div
+                    class="projects-grid"
+                    id="projectsGrid">
+
+
+                    <!-- Project 1 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="web"
+                        data-title="Student Management System">
+
+                        <div class="project-image project-image-1">
+
+                            <div>
+                                🎓
+                            </div>
+
+                            <button
+                                class="details-btn"
+                                data-project="0">
+
+                                View Details
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                Student Management System
+                            </h3>
+
+                            <p>
+                                A web application for managing
+                                student information and academic
+                                records.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button
+                                    class="text-btn details-btn"
+                                    data-project="0">
+
+                                    Details
+
+                                </button>
+
+                                <a href="https://github.com/kalkidan642/kalkidan.git" target="_blank"class="project-link">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="python"
+                        data-title="Python Calculator">
+
+                        <div class="project-image project-image-2">
+
+                            <div>
+                                🐍
+                            </div>
+
+                            <button
+                                class="details-btn"
+                                data-project="1">
+
+                                View Details
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Python
+                            </span>
+
+                            <h3>
+                                Python Calculator
+                            </h3>
+
+                            <p>
+                                A simple calculator application
+                                developed with Python.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Python</span>
+                                <span>Functions</span>
+                                <span>GUI</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button
+                                    class="text-btn details-btn"
+                                    data-project="1">
+
+                                    Details
+
+                                </button>
+
+                                <a href="https://github.com/kalkidan642/kalkidan.git" target="_blank" class="project-link">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="data"
+                        data-title="Student Performance Analysis">
+
+                        <div class="project-image project-image-3">
+
+                            <div>
+                                📊
+                            </div>
+
+                            <button
+                                class="details-btn"
+                                data-project="2">
+
+                                View Details
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Data Science
+                            </span>
+
+                            <h3>
+                                Student Performance Analysis
+                            </h3>
+
+                            <p>
+                                Analysis and visualization of student
+                                performance data.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Charts</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button
+                                    class="text-btn details-btn"
+                                    data-project="2">
+
+                                    Details
+
+                                </button>
+
+                                <a href="https://github.com/kalkidan642/kalkidan.git" target="_blank" class="project-link">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 4 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="web"
+                        data-title="Personal Portfolio">
+
+                        <div class="project-image project-image-4">
+
+                            <div>
+                                💻
+                            </div>
+
+                            <button
+                                class="details-btn"
+                                data-project="3">
+
+                                View Details
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                Personal Portfolio
+                            </h3>
+
+                            <p>
+                                A responsive portfolio website built
+                                using HTML, CSS and JavaScript.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button
+                                    class="text-btn details-btn"
+                                    data-project="3">
+
+                                    Details
+
+                                </button>
+
+                                <a href="https://github.com/kalkidan642/kalkidan.git" target="_blank" class="project-link">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 5 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="data"
+                        data-title="Data Visualization Dashboard">
+
+                        <div class="project-image project-image-5">
+
+                            <div>
+                                📈
+                            </div>
+
+                            <button
+                                class="details-btn"
+                                data-project="4">
+
+                                View Details
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Data Science
+                            </span>
+
+                            <h3>
+                                Data Visualization Dashboard
+                            </h3>
+
+                            <p>
+                                An interactive dashboard for exploring
+                                and visualizing data.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Visualization</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button
+                                    class="text-btn details-btn"
+                                    data-project="4">
+
+                                    Details
+
+                                </button>
+
+                                <a href="https://github.com/kalkidan642/kalkidan.git" target="_blank" class="project-link">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 6 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="other"
+                        data-title="Library Management System">
+
+                        <div class="project-image project-image-6">
+
+                            <div>
+                                📚
+                            </div>
+
+                            <button
+                                class="details-btn"
+                                data-project="5">
+
+                                View Details
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Other
+                            </span>
+
+                            <h3>
+                                Library Management System
+                            </h3>
+
+                            <p>
+                                A system for managing books, users,
+                                borrowing and returning activities.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>SQL</span>
+                                <span>Database</span>
+                                <span>Programming</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button
+                                    class="text-btn details-btn"
+                                    data-project="5">
+
+                                    Details
+
+                                </button>
+
+                                <a href="https://github.com/kalkidan642/kalkidan.git" target="_blank" class="project-link">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div
+                    class="no-projects"
+                    id="noProjects">
+
+                    <div>
+                        🔎
+                    </div>
+
+                    <h3>
+                        No Projects Found
+                    </h3>
+
+                    <p>
+                        Try another search term or category.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project Modal -->
+
+            <div
+                class="project-modal"
+                id="projectModal"
+                aria-hidden="true">
+
+                <div class="modal-content">
+
+                    <button
+                        class="modal-close"
+                        id="modalClose">
+
+                        ✕
+
+                    </button>
+
+                    <div
+                        class="modal-project-image"
+                        id="modalImage">
+
+                        💻
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <span
+                            class="project-category"
+                            id="modalCategory">
+                        </span>
+
+                        <h2 id="modalTitle">
+                            Project Title
+                        </h2>
+
+                        <p id="modalDescription">
+                        </p>
+
+                        <h4>
+                            Technologies
+                        </h4>
+
+                        <div
+                            class="project-tags"
+                            id="modalTechnologies">
+                        </div>
+
+                        <div class="modal-links">
+
+                            <a
+                                href="https://github.com/kalkidan642/kalkidan.git" target="_blank"
+                                id="modalGithub"
+                                class="btn primary-btn">
+
+                                GitHub
+
+                            </a>
+
+                            <a
+                                href="#"
+                                id="modalDemo"
+                                class="btn secondary-btn">
+
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT SECTION
+             ================================================= -->
+
+        <section class="contact section" id="contact">
+
+            <div class="section-container">
+
+
+                <div class="section-title reveal">
+
+                    <p class="section-subtitle">
+                        Get In Touch
+                    </p>
+
+                    <h2>
+                        Contact <span>Me</span>
+                    </h2>
+
+                    <div class="title-line"></div>
+
+                </div>
+
+
+                <div class="contact-introduction reveal">
+
+                    <p>
+                        Do you have a question, project idea,
+                        or opportunity? Feel free to contact me.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-content">
+
+
+                    <!-- Contact information -->
+
+                    <div class="contact-information reveal">
+
+                        <h3>
+                            Let's Talk
+                        </h3>
+
+                        <p class="contact-description">
+
+                            I am interested in learning,
+                            collaborating and working on
+                            meaningful technology projects.
+
+                        </p>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                ✉️
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Email
+                                </h4>
+
+                                <a href="mailto:kalkidangsy@gmail.com">
+                                    kalkidangsy@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                📱
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Phone
+                                </h4>
+
+                                <a href="tel:+251900000000">
+                                    +251 988381999
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                📍
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Location
+                                </h4>
+
+                                <p>
+                                    Ethiopia
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-social">
+
+                            <h4>
+                                Follow Me
+                            </h4>
+
+                            <div class="social-links">
+
+                                <a href="https://github.com/kalkidan642/kalkidan.git" target="_blank">
+                                    GitHub
+                                </a>
+
+                                <a href="#">
+                                    LinkedIn
+                                </a>
+
+                                <a href="#">
+                                    Facebook
+                                </a>
+
+                                <a href="#">
+                                    Telegram
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Contact form -->
+
+                    <div class="contact-form-container reveal">
+
+                        <form
+                            id="contactForm"
+                            novalidate>
+
+
+                            <div class="form-group">
+
+                                <label for="contactName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    placeholder="Enter your name">
+
+                                <small id="nameError"
+                                    class="form-error">
+                                </small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contactEmail">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="contactEmail"
+                                    placeholder="Enter your email">
+
+                                <small id="emailError"
+                                    class="form-error">
+                                </small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contactSubject">
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contactSubject"
+                                    placeholder="Message subject">
+
+                                <small id="subjectError"
+                                    class="form-error">
+                                </small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contactMessage">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="contactMessage"
+                                    maxlength="500"
+                                    rows="6"
+                                    placeholder="Write your message..."></textarea>
+
+                                <div class="message-bottom">
+
+                                    <small
+                                        id="messageError"
+                                        class="form-error">
+                                    </small>
+
+                                    <span id="characterCount">
+                                        0 / 500
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn primary-btn submit-btn">
+
+                                Send Message
+                                <span>➤</span>
+
+                            </button>
+
+
+                            <div
+                                id="formStatus"
+                                class="form-status"
+                                role="alert">
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-logo">
+
+                <a href="#home" class="logo">
+                    <span>&lt;</span>kalkidan<span>/&gt;</span>
+                </a>
+
+                <p>
+                    Learning today. Building tomorrow.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="GitHub">
+                    GH
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    IN
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    FB
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="footerYear"></span>
+                kalkidan . All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BACK TO TOP
+         ===================================================== -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top">
+
+        ↑
+
+    </button>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
